@@ -1,24 +1,40 @@
 # Mj::HashUtils
 
-TODO: Delete this and the text below, and describe your gem
+Hash utilities for ruby.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mj/hash_utils`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Ruby](https://github.com/mjacobus/mj-hash_utils/actions/workflows/main.yml/badge.svg)](https://github.com/mjacobus/mj-hash_utils/actions/workflows/main.yml)
+[![Coverage Status](https://coveralls.io/repos/github/mjacobus/mj-hash_utils/badge.svg?branch=main)](https://coveralls.io/github/mjacobus/mj-hash_utils?branch=main)
+[![Maintainability](https://api.codeclimate.com/v1/badges/52468dead5a8c7568a0f/maintainability)](https://codeclimate.com/github/mjacobus/mj-hash_utils/maintainability)
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ bundle add mj-hash_utils
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ gem install mj-hash_utils
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+hash = HashUtils.new
+
+hash.filter_keys(hash, *keys)
+hash.deep_symbolize_keys(hash)
+hash.deep_stringify_keys(hash)
+hash.compact(hash)
+
+hash.deep_transform_keys(hash) do |key|
+  "user_#{key}"
+end
+
+hash.deep_modify_value(hash) do |value|
+  "#{value} + #{value}"
+end
+
+hash.normalize_json_keys(hash) # camel case to snakeCase
+hash.underscorize_keys(hash, &block)
+```
 
 ## Development
 
@@ -36,4 +52,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Mj::HashUtils project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/mjacobus/mj-hash_utils/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the `Mj::HashUtils` project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/mjacobus/mj-hash_utils/blob/main/CODE_OF_CONDUCT.md).

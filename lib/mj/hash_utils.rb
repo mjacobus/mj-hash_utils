@@ -29,8 +29,8 @@ module Mj
       DeepValueModifier.new.modify(hash, &block)
     end
 
-    def normalize_json_keys(hash, &block)
-      JsonKeyNormalizer.new.normalize(hash, &block)
+    def normalize_json_keys(hash)
+      JsonKeyNormalizer.new.normalize(hash)
     end
 
     def compact(hash)
