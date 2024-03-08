@@ -4,7 +4,7 @@ Hash utilities for ruby.
 
 [![Ruby](https://github.com/mjacobus/mj-hash_utils/actions/workflows/main.yml/badge.svg)](https://github.com/mjacobus/mj-hash_utils/actions/workflows/main.yml)
 [![Coverage Status](https://coveralls.io/repos/github/mjacobus/mj-hash_utils/badge.svg?branch=main)](https://coveralls.io/github/mjacobus/mj-hash_utils?branch=main)
-[![Maintainability](https://api.codeclimate.com/v1/badges/52468dead5a8c7568a0f/maintainability)](https://codeclimate.com/github/mjacobus/mj-hash_utils/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/00f72012cd67ae53b273/maintainability)](https://codeclimate.com/github/mjacobus/mj-hash_utils/maintainability)
 
 ## Installation
 
