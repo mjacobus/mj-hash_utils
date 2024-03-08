@@ -1,5 +1,5 @@
 module Mj
-  module HashUtils
+  class HashUtils
     VERSION: String
     # See the writing guide of rbs: https://github.com/ruby/rbs#guides
   end
