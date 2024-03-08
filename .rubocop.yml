@@ -79,7 +79,7 @@ RSpec:
     - 'spec/factories/**/*'
 
 RSpec/ExampleLength:
-  Max: 10
+  Enabled: false
 
 RSpec/ExpectChange:
   Enabled: false
